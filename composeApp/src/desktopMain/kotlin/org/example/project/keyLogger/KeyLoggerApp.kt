@@ -15,6 +15,9 @@ fun main() {
 }
 
 fun initialize() {
+    // Set the location of log4j configuration file.
+    System.setProperty("log4j.configurationFile", "desktopMain/resources/log4j2.xml")
+
     val logger = Logger.getLogger(GlobalScreen::class.java.packageName)
     logger.level = Level.WARNING
 
